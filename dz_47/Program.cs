@@ -19,7 +19,7 @@ void FillArray (double [,] myArray)
     {
         for (int j = 0; j < myArray.GetLength(1); j++)
         {
-            myArray[i,j] = rnd.Next(-100,101);
+            myArray[i, j] = Convert.ToDouble(rnd.Next(-100, 101)) / 2;
         }
     }
 }
